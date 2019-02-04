@@ -29,7 +29,10 @@ RUN apt-get update && \
     autogen \
     bzip2 \
     autoconf-archive \
-    p7zip-full
+    p7zip-full \
+    ragel \
+    lsb-release \
+    python3-distutils
 
 COPY . ./ffmpeg-windows-build-helpers
 

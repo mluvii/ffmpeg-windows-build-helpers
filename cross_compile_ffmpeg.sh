@@ -1867,7 +1867,7 @@ build_libMXF() {
 }
 
 build_ffmpeg() {
-  local extra_postpend_configure_options=$2
+  local extra_postpend_configure_options="$2 --disable-indevs"
   if [[ -z $3 ]]; then
     local output_dir="ffmpeg_git"
   else
